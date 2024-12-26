@@ -1,0 +1,159 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root {
+  height: 100vh;
+  height: 100dvh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-900: #322D29; /* Darkest */
+  --primary-500: #625C54; /* Medium shade */
+ 
+  --danger-900: #72383D;
+  
+  --neutral-900: #AC9c8D;
+
+  --neutral-500: #D1C7BD;
+
+  --neutral-200: #D9D9D9;
+
+  --neutral-100: #EFE9E1;
+}
+
+/* .box {
+  
+} */
+
+.bg-primary-900 { background: var(--primary-900);}
+.bg-primary-500 { background: var(--primary-500);}
+
+.bg-danger-900 { background: var(--danger-900);}
+
+.bg-neutral-900 { background: var(--neutral-900)}
+.bg-neutral-500 { background: var(--neutral-500)}
+.bg-neutral-200 { background: var(--neutral-200)}
+.bg-neutral-100 { background: var(--neutral-100)}
+
+.color-primary-900 { color: var(--primary-900);}
+.color-primary-500 { color: var(--primary-500);}
+.color-danger-900 { color: var(--danger-900);}
+
+.color-neutral-900 { color: var(--neutral-900)}
+.color-neutral-500 { color: var(--neutral-500)}
+.color-neutral-200 { color: var(--neutral-200)}
+.color-neutral-100 { color: var(--neutral-100)}
+
+.box.pad-half { padding: .5em}
+.box.pad-1em { padding: 1em }
+.box.pad-1em-2em { padding: 1em 2em}
+.box.pad-2em {padding: 2em}
+
+
+.btn {
+  cursor: pointer;
+  padding: 1em 2em;
+}
+
+.btn-primary {
+  background-color: var(--primary-900);
+  color: var(--neutral-500);
+}
+
+.btn-secondary {
+  background-color: var(--neutral-500);
+  color: var(--primary-500);
+}
+
+.btn-danger {
+  background-color: var(--danger-900);
+  color: var(--neutral-100);
+}
+
+.flex {display: flex}
+
+.flex.column { flex-direction: column;}
+.flex.row { flex-direction: row;}
+
+.flex.justify-between { justify-content: space-between;}
+.flex.justify-around { justify-content: space-around;}
+.flex.justify-evenly { justify-content: space-evenly;}
+.flex.justify-center { justify-content: center;}
+
+.flex.align-center { align-items: center}
+
+.flex.wrap { flex-wrap: wrap;}
+.flex.gap-1em { gap: 1em}
+.flex.gap-2em { gap: 2em}
+
+.search-bar {
+  border: 2px var(--neutral-200) solid;
+  border-radius: 2em;
+  padding: 1em 2em;
+  width: max-content;
+  font-size: medium;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: min(50vw, 1200px);
+}
+.w-third {
+  width: min(33dvw, 500px);
+}
+.w-fourth {
+  width: min(33dvw, 400px);
+}
+.w-fifth {
+  width: min(33dvw, 300px);
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.pointer {
+  cursor: pointer
+}
+
+.fw-500 {font-weight: 500}
+.fw-700 {font-weight: 700}
+.fw-800 {font-weight: 800}
+.fw-900 {font-weight: 900}
+
+.fs-500 {font-size: 1em}
+.fs-700 {font-size: 1.2em}
+.fs-800 {font-size: 1.5em}
+.fs-900 {font-size: 2em}
+
+.hover:hover {
+  box-shadow: 0 0 2em var(--primary-500);
+}
+
+input {
+  border: .5px solid var(--neutral-200);
+  border-bottom: 2px solid var(--neutral-200);
+  padding: 1em;
+  width: max-content;
+}
