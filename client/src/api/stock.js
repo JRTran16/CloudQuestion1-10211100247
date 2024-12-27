@@ -1,5 +1,5 @@
 
-const baseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_API_URL;
 import axios from 'axios';
 
 const add = async (stock) => {

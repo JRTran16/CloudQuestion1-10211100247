@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+console.log(API_BASE_URL)
 
 const auth = async (token) => {
   try {
@@ -29,6 +30,7 @@ const login = async (page, email, username, password) => {
       return 'registered'
       navigate('..');
     } else {
+      console.log(API_BASE_URL)
       const response = await axios.post(`${API_BASE_URL}/api/v1/auth/login`, { email, password });
       localStorage.setItem('token', response.data.token);
       // dispatch(setUser(response.data.user))

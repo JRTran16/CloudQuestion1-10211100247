@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 // import { products } from './dummydata';
-const baseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_API_URL;
 
 export default async (filters) => {
     try {
