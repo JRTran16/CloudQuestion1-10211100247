@@ -48,9 +48,9 @@ const Auth = ({ page, setUserAuthed }) => {
           <input type="submit" value={page === 'login' ? 'Sign in' : 'Create an account'} />
         }
       </div>
-      <div className='or'>or</div>
-      <div className='google'>{page === 'login' ? 'Sign in with google' : 'Create an account with google'}</div>
-      <div className='sign-up'>
+      {/* <div className='or'>or</div> */}
+      {/* <div className='google'>{page === 'login' ? 'Sign in with google' : 'Create an account with google'}</div> */}
+      <div className='sign-up flex justify-center box pad-2em'>
         {page === 'login' ? "Don't have an account" : 'Already have an account'}?
         <Link to={page === 'login' ? '/register' : '..'}>
           {page === 'login' ? 'Sign up' : 'Sign in'}

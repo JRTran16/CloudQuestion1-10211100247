@@ -16,8 +16,8 @@ const Home = ({ userAuthed, setUserAuthed}) => {
     <Navigate to= "../portal/customer"/> :
     <div className='Home'>
       <div className='intro side'>
-        <Logo />
-        <p>Welcome to your best store</p>
+        <div className='color-primary-900 fs-900 fw-900'>Lynova</div>
+        <p className='fs-700'>Welcome to your store</p>
       </div>
 
       <div className='auth'>

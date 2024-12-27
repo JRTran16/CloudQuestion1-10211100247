@@ -27,7 +27,7 @@ const ProductBasket = ({ vendor }) => {
   return (
     <div className="box pad-2em flex gap-2em wrap w-full">
       <div className="box w-third pad-half bg-neutral-200">
-        <img src={product.image} alt="" className="w-full"/>
+        <img src={product.image} alt="" className="w-full" style={{height: "auto", aspectRatio: "1"}}/>
       </div>
       <div className="box w-third flex column gap-2em">
         <div className='fs-800 fw-700 flex align-center gap-2em'>{product.name}

@@ -30,7 +30,7 @@ const createProduct = async (req, res) => {
     const { owner, name, price, available, shortDescr, longDescr, category } = req.body;
     
     const newProduct = new Product({
-        owner, name, price, available, shortDescr, longDescr, category, rating: 0, reviews: [],
+        owner, name, price, available, shortDescr, longDescr, category, rating: Number((Math.random() * 4 + 1).toFixed(1)), reviews: [],
         image: fileLocation,
     });
 

@@ -18,7 +18,7 @@ const Product = ({ product, vendor }) => {
     <div key={product.id} className='box pad-1em w-fifth bg-neutral-900 pointer hover' onClick={() => loadProduct(product)}>
         <div className='box pad-half color-primary-900 fw-700 fs-700'>{product.name}</div>
         <div className='box pad-half color-primary-500 fs-700'>{product.shortDescr}</div>
-        <img src={product.image} alt="Product image" className="w-full"/>
+        <img src={product.image} alt="Product image" className="w-full" style={{height: "auto", aspectRatio: "1"}}/>
         <div className="flex justify-between">
           <span className="flex column">
             <span className="">

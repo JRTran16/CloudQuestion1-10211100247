@@ -8,19 +8,17 @@ import Header from './header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 
-const token = localStorage.getItem('token') || "placeholder";
-const user = localStorage.getItem('user') || "placeholder"
+const token = localStorage.getItem('token')
+const user = localStorage.getItem('user')
 import { useState, useEffect } from 'react';
 import { auth } from './api/auth';
 
 
 function App() {
   const [userAuthed, setUserAuthed] = useState((token && user) ? true : false); 
+  console.log(userAuthed)
   useEffect(() => {
-    const isAuthed = auth(token);
-    console.log(isAuthed)
-    if (isAuthed) setUserAuthed(true)
-    if (!isAuthed) setUserAuthed(false)
+    auth(token).then(isAuthed => isAuthed ? setUserAuthed(true) : setUserAuthed(false)).catch(setUserAuthed(false))
   }, [token]);
 
   return (

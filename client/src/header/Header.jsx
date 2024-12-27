@@ -30,6 +30,10 @@ const Header = () => {
   const [menuShow, setMenuShow] = useState(false)
   const [dropdownVisible, setDropdownVisible] = React.useState(false);
 
+  const handleCategoryChange = (category) => {
+    dispatch(chooseFilters({key: "category", value: category}))
+    setDropdownVisible(false)
+  }
 
   return (
     <header className="bg-neutral-200">
@@ -70,7 +74,7 @@ const Header = () => {
                   cursor: "pointer",
                   borderBottom: "1px solid #ddd",
                 }}
-                onClick={() => dispatch(chooseFilters({key: "category", value: category}))}
+                onClick={() => handleCategoryChange(category)}
               >
                 {category}
               </li>
