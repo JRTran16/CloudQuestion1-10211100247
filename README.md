@@ -1,9 +1,6 @@
 #Lynova E-commerce Website
 # E-Commerce Web Application
 
-# Name : JOHN RAY TRAN
-# ID: 10211100247
-
 ## Project Overview
 This project is a comprehensive e-commerce web application designed to demonstrate practical application of web technologies and cloud ecosystems. The application showcases essential functionalities such as user authentication, product management, and order processing, built using modern tools and technologies.
 
